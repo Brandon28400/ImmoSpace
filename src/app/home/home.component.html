@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<h1>Welcome to {{ title }} !</h1>
+
+<button type="button" class="btn btn-dark btn-lg active bouton1">Achat</button>
+<button type="button" class="btn btn-dark btn-lg bouton2">Location</button>
+
+<!-- Premier critère -->
+<div class="row">
+  <div class="col-6">
+      <label>Type de système :</label>
+  </div>
+  <div class="col-6">
+    <select class="form-control">
+      <option>Système Solaire</option>
+      <option>Système ...</option>
+      <option>Système ...</option>
+    </select>
+  </div>
+</div>
+
+<br/>
+
+<!-- Deuxième critère -->
+<div class="row">
+  <div class="col-6">
+      <label>Taille de la planète :</label>
+  </div>
+  <div class="col-6">
+      <input type="text" class="form-control" aria-describedby="emailHelp"placeholder="Entrez la superficie en km2">
+  </div>
+</div>
+<br/>
+
+<!-- Troisième critère -->
+<div class="row">
+  <div class="col-6">
+      <label>Température Ambiante :</label>
+  </div>
+  <div class="col-6">
+      <input type="text" class="form-control" placeholder="Température en degrés Celcius">
+  </div>
+</div>
+<br/>
+
+<!-- Quatrième critère -->
+<div class="row">
+  <div class="col-6">
+      <label>Position Galactique :</label>
+  </div>
+  <div class="col-6">
+      <input type="text" class="form-control" placeholder="Entrez les coordonnées du système souhaité">
+  </div>
+</div>
+<br/>
+
+<!-- Cinquième critère -->
+<div class="row">
+  <div class="col-6">
+      <label>Prix :</label>
+  </div>
+  <div class="col-6">
+      <select class="form-control">
+          <option>100-500 crédits</option>
+          <option>501-2000 crédits</option>
+          <option>2001-5000 crédits</option>
+          <option>5001-10000 crédits</option>
+          <option>+10000 crédits</option>
+        </select>
+  </div>
+</div>
+<br/>
+
+<button type="submit" class="btn btn-dark btn-lg bouton3"><a [routerLink]="['/Robot']">Valider</a></button>

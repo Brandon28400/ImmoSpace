@@ -1,0 +1,55 @@
+.name_robot1, .name_robot2, .name_robot3, .name_robot4{
+    color: white;
+    font-size: 190%;
+    text-align: center;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}
+
+.margin{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.name_robot2, a{
+    text-decoration: none;
+}
+
+h2{
+    color: white;
+    margin-top: 2%;
+}
+
+p{
+    color: white;
+    margin-top: 2%;
+    font-size: 160%;
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+	color: white;
+}
+
+/* Smartphone (col-xs)*/
+@media screen and (min-width: 0px) and (max-width: 767px){ 
+    
+}
+
+/* Tablette (col-sm)*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+    img{
+        height: 300px;
+        width: 300px;
+    }
+    .margin{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}

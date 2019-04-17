@@ -1,0 +1,43 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<h2>Choix de l'agent immobilier</h2>
+
+<p>Ici, tu peux choisir l'agent immobilier qui t'accompagnera dans ton achat.</p>
+
+<div class="margin">
+    <div class="row">
+        <div class="col-6">
+            <div class="img_robot1">
+                <img src="assets/C3-PO.png" alt="photo">
+            </div>
+                <div class="name_robot1">C3-PO</div>
+        </div>
+        <div class="col-6">
+            <div class="img_robot2">
+                <a [routerLink]="['/Spacemap']">
+                <img src="assets/robot1.png" alt="photo">
+                </a>
+            </div>
+                <div class="name_robot2">Mr.Bidule</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="img_robot3">
+                <img src="assets/Terminator.png" alt="photo">
+            </div>
+                <div class="name_robot3">Terminator</div>
+        </div>
+        <div class="col-6">
+            <div class="img_robot4">
+                <img src="assets/Walle.png" alt="photo">
+            </div>
+                <div class="name_robot4">Wall-E</div>
+            </div>
+        </div>
+</div>
+
+<button type="submit" class="btn btn-dark btn-lg"><a [routerLink]="['/Home']">Retour</a></button>

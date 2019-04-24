@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { RobotComponent } from './robot/robot.component';
 import { MenuComponent } from './menu/menu.component';
 import { PlaneteComponent } from './planete/planete.component';
+import { FormachatComponent } from './formachat/formachat.component';
+import { FormlocationComponent } from './formlocation/formlocation.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { PlaneteComponent } from './planete/planete.component';
     RobotComponent,
     MenuComponent,
     PlaneteComponent,
+    FormachatComponent,
+    FormlocationComponent,
   ],
   imports: [
     BrowserModule,

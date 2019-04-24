@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { Injectable } from '@angular/core';
-import { Scene, Material } from 'three';
+// import { Scene, Material } from 'three';
 
 @Injectable({
   providedIn: 'root'

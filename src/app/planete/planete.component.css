@@ -1,93 +1,21 @@
-p{
-    border: 2px solid black;
-    font-size: 140%;
-    color: white;
-    padding: 2%;
-    margin-top: 10%;
-    text-align: left;
+
+
+#info {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	text-align: center;
+    display:block;
+    color: aliceblue;
 }
 
-h2{
-    color: white;
-    margin-top: 2%;
-    margin-bottom: 2%;
+
+.description{
+    color:aliceblue;
+    position: absolute;
+    right: 10%;
+    top:40%;
+    border-top: 1px solid white;
+    text-align: end
 }
 
-.valid{
-    margin-top: 10%;
-}
-
-a{
-	color: white;
-}
-
-a:hover{
-	color: white;
-}
-
-/* Smartphone (col-xs)*/
-@media screen and (min-width: 0px) and (max-width: 767px){ 
-    .margin{
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-    .map{
-        height: 100%;
-        width: 100%;
-    }
-    .robot{
-        height: 200px;
-        width: 150px;
-    }
-    p{
-        font-size: 100%;
-        margin-top: 1%;
-    }
-}
-
-/* Tablette (col-sm)*/
-@media screen and (min-width: 768px) and (max-width: 991px){ 
-    .margin{
-        margin-left: 3%;
-        margin-right: 3%;    
-    }
-    .map{
-        height: 100%;
-        width: 100%;
-    }
-    .robot{
-        height: 300px;
-        width: 250px;
-        margin-right: 10%;
-    }
-    p{
-        font-size: 130%;
-        margin-top: 1%;
-        margin-left: 30%;
-    }
-}
-  
-/* Petit Ecran (col-md)*/
-@media screen and (min-width: 992px) and (max-width: 1199px){ 
-    .margin{
-        margin-left: 15%;
-        margin-right: 15%;
-        justify-content: center;
-    }
-}
-  
-/* Grand écran (col-lg)*/
-@media screen and (min-width: 1200px){ 
-    .margin{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    .row{
-        margin-left: 18%;
-        margin-right: 18%;
-    }
-    .robot{
-        height: 350px;
-        width: 350px;
-    }
-}

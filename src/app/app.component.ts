@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NasaService } from './nasa.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+
+  data: any;
+
+  constructor(private myService: NasaService) {
+
+    this.data = [];
+    this.myService.getPlanets().subscribe(
+      (param_data: string[]) => {
+        this.data = param_data;
+        console.log(this.data)
+
+      }
+    )
+
+
+  }
+
 }

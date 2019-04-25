@@ -1,43 +1,87 @@
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-<h2>Choix de l'agent immobilier</h2>
+<h2>Real estate agent choice</h2>
+<br>
 
-<p>Ici, tu peux choisir l'agent immobilier qui t'accompagnera dans ton achat.</p>
+<h3>Here, you can choose the real estate agent who will accompany you in your purchase.</h3>
+<br>
 
 <div class="margin">
     <div class="row">
-        <div class="col-6">
-            <div class="img_robot1">
-                <img src="assets/robot_1.png" alt="photo">
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <div id="image">
+                <img src="assets/robot_1.png" alt="photo" class="col-12" />
             </div>
-                <div class="name_robot1">Robotus</div>
-        </div>
-        <div class="col-6">
-            <div class="img_robot2">
-                <a [routerLink]="['/Spacemap']">
-                <img src="assets/robot_2.png" alt="photo">
-                </a>
+            <div id="presrobot_1">
+                <p>Specialist of cold and distant planets, I am a very good negotiator and I can you get options at very
+                    good prices.</p>
             </div>
-                <div class="name_robot2">Astro</div>
-        </div>
+        </a>
+
+
+
+
+
+
+
+
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <img src="assets/robot_2.png" alt="photo" class="col-12" />
+
+            <div id="presMr.Bidule">
+                <p>I am specialized in long term rentals or with an option to buy. I can also accompany you for
+                    life-time purchases</p>
+            </div>
+        </a>
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <img src="assets/robot_3.png" alt="photo" class="col-12" />
+
+            <div id="presrobot_3">
+                <p>I am the specialist of inhabited planets. I also work on planets near the sun where temperatures are
+                    unsustainable.</p>
+            </div>
+        </a>
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <img src="assets/robot_4.png" alt="photo" class="col-12" />
+
+            <div id="presrobot_4">
+                <p>I am an ecological in the soul, I know well the planets having a significant pollution and can
+                    negotiate for you a good price before depolluting.</p>
+            </div>
+        </a>
+
+
     </div>
     <div class="row">
-        <div class="col-6">
-            <div class="img_robot3">
-                <img src="assets/robot_3.png" alt="photo">
-            </div>
-                <div class="name_robot3">Oscar</div>
-        </div>
-        <div class="col-6">
-            <div class="img_robot4">
-                <img src="assets/robot_4.png" alt="photo">
-            </div>
-                <div class="name_robot4">TOD</div>
-            </div>
-        </div>
-</div>
 
-<a [routerLink]="['/Home']"><button type="submit" class="btn btn-dark btn-lg">Retour</button></a>
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <p class="name_robot1" class="col-12">Astro</p>
+        </a>
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <p class="name_robot2" class="col-12">Oscar</p>
+        </a>
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <p class="name_robot3" class="col-12">Robotus</p>
+        </a>
+
+        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
+            <p class="name_robot4" class="col-12">Tod</p>
+        </a>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+  
+    <button type="submit" class="btn btn-dark btn-lg"><a [routerLink]="['/Home']">Retour</a></button>

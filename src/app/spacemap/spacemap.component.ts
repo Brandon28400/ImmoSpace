@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaneteComponent } from '../planete/planete.component';
+import { PlaneteService } from '../planete/planete.service';
 
 @Component({
   selector: 'app-spacemap',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpacemapComponent implements OnInit {
 
-  constructor() { }
+  constructor(private planServ: PlaneteService) {
+
+   }
 
   ngOnInit() {
+    
+    
+
   }
+  
+
+  
 
 }

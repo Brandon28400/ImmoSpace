@@ -9,7 +9,7 @@ const ROUTES: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Robot', component: RobotComponent },
   { path: 'Spacemap', component: SpacemapComponent },
-  { path: 'Planete', component: PlaneteComponent },
+  { path: 'Planete/:planetname', component: PlaneteComponent },
 ];
 
 export { ROUTES };

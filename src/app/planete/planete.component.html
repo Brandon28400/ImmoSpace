@@ -3,11 +3,18 @@
     <p>THE EARTH</p>
   </div>
   <canvas id="renderCanvas"></canvas>
-  <div class=" row d-none d-xl-block description ">
-    <p>Masse:5,972 × 10^24 kg</p>
-    <p>Gravité: 9,806 65 m/s2; (1 g)</p>
-    <p>Rayon moyen volumétrique : 6 371,008 km</p>
-  </div>
+
+  <div *ngFor="let current of planeteRandom">
+      <ul>
+        <li>{{current.pl_name}}</li>
+        <li>{{current.pl_bmassj}}</li>
+        <li *ngIf="current.pl_orbper">{{current.pl_orbper}}</li>
+        <li *ngIf="!current.pl_orbper">va te faire voir</li>
+      
+      </ul>
+    
+    </div>
+    <button type="button" (click)="nextPlanete()">NEXT</button>
 
 </div>
 

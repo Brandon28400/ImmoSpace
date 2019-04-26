@@ -1,12 +1,10 @@
-
-
 #info {
 	position: absolute;
 	top: 15%;
 	width: 100%;
 	text-align: center;
     display:block;
-    color: aliceblue;
+    color: white;
 }
 
 
@@ -19,3 +17,6 @@
     text-align: end
 }
 
+p{
+    font-size: 120%;
+}

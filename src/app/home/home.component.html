@@ -1,13 +1,11 @@
 <h1>Welcome to {{ title }} !</h1>
-<h3>Vous êtes ici pour...</h3>
+<h2>You're here for...</h2>
 
 <div class="row">
-  <div class="col-6">
-    <a [routerLink]="['/FormAchat']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Acheter</button></a>
+  <div class="col-4 offset-2">
+    <a [routerLink]="['/FormAchat']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Buy</button></a>
   </div>
-  <div class="col-6">
-    <a [routerLink]="['/FormLocation']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Louer</button></a>
+  <div class="col-4">
+    <a [routerLink]="['/FormLocation']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Rent</button></a>
   </div>
 </div>
-
-

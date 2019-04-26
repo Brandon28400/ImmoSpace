@@ -1,16 +1,17 @@
-<h1>Formulaire de location</h1>
+<div class="center">
+<h1>Rental Form</h1>
 
 <br/><br/><br/><br/>
 <!-- Premier critère -->
 <div class="row">
   <div class="col-6">
-      <label>Type de système :</label>
+      <label>System type :</label>
   </div>
   <div class="col-6">
     <select class="form-control">
-      <option>Système Solaire</option>
-      <option>Système ...</option>
-      <option>Système ...</option>
+      <option>Solar System</option>
+      <option>... System</option>
+      <option>... System</option>
     </select>
   </div>
 </div>
@@ -20,10 +21,10 @@
 <!-- Deuxième critère -->
 <div class="row">
   <div class="col-6">
-      <label>Taille de la planète :</label>
+      <label>Size of the planet :</label>
   </div>
   <div class="col-6">
-      <input type="text" class="form-control" aria-describedby="emailHelp"placeholder="Entrez la superficie en km2">
+      <input type="text" class="form-control" aria-describedby="emailHelp"placeholder="Enter the area in km2">
   </div>
 </div>
 <br/>
@@ -31,10 +32,10 @@
 <!-- Troisième critère -->
 <div class="row">
   <div class="col-6">
-      <label>Température Ambiante :</label>
+      <label>Ambiant temperature :</label>
   </div>
   <div class="col-6">
-      <input type="text" class="form-control" placeholder="Température en degrés Celcius">
+      <input type="text" class="form-control" placeholder="Temperature in Celsius Degres">
   </div>
 </div>
 <br/>
@@ -42,10 +43,10 @@
 <!-- Quatrième critère -->
 <div class="row">
   <div class="col-6">
-      <label>Position Galactique :</label>
+      <label>Galactic position</label>
   </div>
   <div class="col-6">
-      <input type="text" class="form-control" placeholder="Entrez les coordonnées du système souhaité">
+      <input type="text" class="form-control" placeholder="Enter the coordinates of the desired system">
   </div>
 </div>
 <br/>
@@ -53,15 +54,15 @@
 <!-- Cinquième critère -->
 <div class="row">
   <div class="col-6">
-      <label>Prix mensuel :</label>
+      <label>Monthly price :</label>
   </div>
   <div class="col-6">
       <select class="form-control">
-          <option>10-50 crédits mensuel</option>
-          <option>51-200 crédits mensuel</option>
-          <option>201-500 crédits mensuel</option>
-          <option>501-1000 crédits mensuel</option>
-          <option>+1000 crédits mensuel</option>
+          <option>10-50 monthly credits</option>
+          <option>51-200 monthly credits</option>
+          <option>201-500 monthly credits</option>
+          <option>501-1000 monthly credits</option>
+          <option>+1000 monthly credits</option>
         </select>
   </div>
 </div>
@@ -69,12 +70,12 @@
 <br/>
 <div class="row">
 	<div class="col-6">
-		<a [routerLink]="['/Home']"><button type="submit" class="btn btn-dark btn-lg bouton3">Retour</button></a>
+		<a [routerLink]="['/Home']"><button type="submit" class="btn btn-dark btn-lg bouton3">Return</button></a>
 	</div>
 	<div class="col-6">
-		<a [routerLink]="['/Robot']"><button type="submit" class="btn btn-dark btn-lg bouton3">Valider</button></a>
+		<a [routerLink]="['/Robot']"><button type="submit" class="btn btn-dark btn-lg bouton3">Validate</button></a>
 	</div>
-
+</div>
 
 
 

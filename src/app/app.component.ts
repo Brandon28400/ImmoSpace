@@ -9,20 +9,27 @@ import { NasaService } from './nasa.service'
 
 export class AppComponent {
 
-  data: any;
+  data: any[];
+  planeteRandom: any[];
+  
 
   constructor(private myService: NasaService) {
+    this.planeteRandom=[];
 
     this.data = [];
     this.myService.getPlanets().subscribe(
       (param_data: string[]) => {
         this.data = param_data;
-        console.log(this.data)
+        this.planeteRandom.push(this.data[Math.floor((Math.random()*this.data.length))]);
+        
+        console.log(this.planeteRandom);
+        
 
       }
+      
     )
-
-
+    
   }
+
 
 }

@@ -33,18 +33,18 @@ a:hover{
 .uranus{
     position: relative;
     left: 50%;
+    top: 20%;
 }
 
 .venus{
     position: relative;
     left: 150%;
-
 }
 
 .lune{
     position: relative;
-    bottom: 30%;
     right: 30%;
+    bottom: 40%;
     height: 150px;
     width: 150px;
 }

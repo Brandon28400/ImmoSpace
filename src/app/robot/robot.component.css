@@ -1,16 +1,14 @@
-.name_robot1, .name_robot2, .name_robot3, .name_robot4{
-    color: rgb(86, 21, 151);
-    font-size: 200%;
-    text-align: center;
-   
-}
-
 a{
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-
+.name_robot1, .name_robot2, .name_robot3, .name_robot4{
+    color: white;
+    font-size: 250%;
+    text-align: center;
+    font-weight: bold;
+}
 .name_robot1,.name_robot2,.name_robot3,.name_robot4, a{
     text-decoration: none;
 }

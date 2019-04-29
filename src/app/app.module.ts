@@ -12,6 +12,12 @@ import { RobotComponent } from './robot/robot.component';
 import { MenuComponent } from './menu/menu.component';
 import { PlaneteComponent } from './planete/planete.component';
 
+import { HttpClientModule } from "@angular/common/http";
+
+import { FormachatComponent } from './formachat/formachat.component';
+import { FormlocationComponent } from './formlocation/formlocation.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +26,13 @@ import { PlaneteComponent } from './planete/planete.component';
     RobotComponent,
     MenuComponent,
     PlaneteComponent,
+    FormachatComponent,
+    FormlocationComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES),
   ],
   providers: [],

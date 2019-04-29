@@ -1,12 +1,18 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class=" d-flex flex-column  align-items-center maps-wrapper">
+  <div id="info">
+    <p>THE EARTH</p>
+  </div>
+  <canvas id="renderCanvas"></canvas>
+  <div class=" row d-none d-xl-block description ">
+    <p>Masse:5,972 × 10^24 kg</p>
+    <p>Gravité: 9,806 65 m/s2; (1 g)</p>
+    <p>Rayon moyen volumétrique : 6 371,008 km</p>
+  </div>
 
-<h2>Planete : Terre</h2>
+</div>
+
 
 <div class="margin">
-  <img class="map" src="https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_960_720.png" alt="Planete" />
   <br />
   <br />
   <div class="row">
@@ -23,9 +29,10 @@
         Océans : 5 <br/>
         Polution : Critique
       </p>
-      <button type="submit" class="btn btn-dark btn-lg"><a [routerLink]="['/Spacemap']">Montre moi autre chose</a></button>
+      <a [routerLink]="['/Spacemap']"><button type="submit" class="btn btn-dark btn-lg">Montre moi autre chose</button></a>
       <br/>
       <button class="valid" type="submit" class="btn btn-dark btn-lg">J'achète !</button>
     </div>
   </div>
 </div>
+

@@ -2,55 +2,48 @@
 <h3>Here, you can choose the real estate agent who will accompany you in your purchase.</h3>
 <br>
 <div class="row">
-    <div class="col-3">
-        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
-            <img class="col-12 robot1" src="assets/robot_1.png">
-        </a>
-    </div>
-    <div class="col-3">
-        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
-            <img class="col-12" src="assets/robot_2.png">
-        </a>
-    </div>
-    <div class="col-3">
-        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
-            <img class="col-12" src="assets/robot_3.png">
-        </a>
-    </div>
-    <div class="col-3">
-        <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3">
-            <img class="col-12" src="assets/robot_4.png">
-        </a>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-3">
-        <p>Specialist of cold and distant planets, I am a very good negotiator and I
-            can you get options at very good prices.</p>
-    </div>
-    <div class="col-3">
-        <p>I am specialized in long term rentals or with an option to buy. I can also accompany you for
-            life-time purchases</p>
-    </div>
-    <div class="col-3">
-        <p>I am the specialist of inhabited planets. I also work on planets near the sun where temperatures are
-            unsustainable.</p>
-    </div>
-    <div class="col-3">
-        <p>I am an ecological in the soul, I know well the planets having a significant pollution and can
-            negotiate for you a good price before depolluting.</p>
-    </div>
-</div>
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
+        <div class="image">
+            <img src="assets/robot_1.png" alt="photo" class="col-12" />
+        </div>
+        <br>
+        <p class="presrobot_1">Specialist of cold and distant planets, I am a very good negotiator and I can you get
+            options at very good prices.</p><br>
+        <p class="name_robot1 col-12">Bender</p>
+    </a>
 
-<div class="row name">
-    <div class="col-3">Iron</div>
-    <div class="col-3">Oscar</div>
-    <div class="col-3">Robotus</div>
-    <div class="col-3">Tod</div>
-</div>
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap1">
+        <div class="image">
+            <img src="assets/robot_2.png" alt="photo" class="col-12" />
+        </div>
+        <br>
+        <p class="presrobot_2">I am specialized in long term rentals or with an option to buy. I can also accompany
+            you for life-time purchases</p><br>
+        <p class="name_robot2 col-12">Oscar</p>
+    </a>
 
-<br/>
-<br/>
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap2">
+        <div class="image">
+            <img src="assets/robot_3.png" alt="photo" class="col-12" />
+        </div>
+        <br>
+        <p class="presrobot_3">I am the specialist of inhabited planets. I also work on planets near the sun where
+            temperatures are unsustainable.</p><br>   
+        <p class="name_robot3 col-12">Robotus</p>
+    </a>
+
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap3">
+        <div class="image">
+            <img src="assets/robot_4.png" alt="photo" class="col-12" />
+        </div>
+        <br>
+        <p class="presrobot_4">I am an ecological in the soul, I know well the planets having a significant
+            pollution and can negotiate for you a good price before depolluting.</p><br>
+        <p class="name_robot4 col-12">Tod</p>
+    </a>
+
+</div>
+<br>
 
 <a [routerLink]="['/Home']"><button type="submit" class="btn btn-dark btn-lg bouton3">Return</button></a>

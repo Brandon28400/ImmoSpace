@@ -1,13 +1,47 @@
 <h1>Welcome to {{ title }} !</h1>
-<h3>Vous êtes ici pour...</h3>
+<h2>You're here for...</h2>
 
 <div class="row">
-  <div class="col-6">
-    <a [routerLink]="['/FormAchat']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Acheter</button></a>
+  <div class="col-4 offset-2">
+    <a [routerLink]="['/Formachat']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Buy</button></a>
   </div>
-  <div class="col-6">
-    <a [routerLink]="['/FormLocation']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Louer</button></a>
+  <div class="col-4">
+    <a [routerLink]="['/Formlocation']" class="nav-link"><button type="button" class="btn btn-secondary btn-lg btnloc">Rent</button></a>
   </div>
 </div>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+<p>Our last exceptional planets to see immediately :</p>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a [routerLink]="['/Planete/earth']">
+      <img class="planete" src="assets/terre.png" alt="First slide">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a [routerLink]="['/Planete/venus']">
+      <img class="planete" src="assets/venus.png" alt="Second slide">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a [routerLink]="['/Planete/mercure']">
+      <img class="planete" src="assets/mercure.png" alt="Third slide">
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

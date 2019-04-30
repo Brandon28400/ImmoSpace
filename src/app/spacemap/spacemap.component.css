@@ -1,9 +1,6 @@
 p{
-    border: 2px solid black;
-    font-size: 140%;
     color: white;
-    padding: 2%;
-    margin-top: 10%;
+    font-size: 130%;
 }
 
 h2{
@@ -27,57 +24,132 @@ a:hover{
 
 .saturne{
     position: relative;
-    right: 140%;
-    bottom: 20%;
+    right: 200%;
     height: 300px;
     width: 300px;
 }
 
+.saturne2{
+    position: absolute;
+    right: 180%;
+    top: 80%;
+    font-size: 100%;
+    color: gold;
+}
+
 .uranus{
     position: relative;
+    left: 50%;
     top: 20%;
+}
+
+.uranus2{
+    position: absolute;
+    top: 10%;
+    left: 76%;
+    font-size: 100%;
+    color: gold;
 }
 
 .venus{
     position: relative;
-    left: 60%;
+    left: 150%;
+}
 
+.venus2{
+    position: absolute;
+    left: 162%;
+    top: 60%;
+    font-size: 100%;
+    color: gold;
 }
 
 .lune{
     position: relative;
-    bottom: 25%;
+    right: 30%;
+    bottom: 40%;
     height: 150px;
     width: 150px;
 }
 
+.lune2{
+    position: absolute;
+    bottom: 135%;
+    right: 55%;
+    font-size: 100%;
+    color: gold;
+}
+
 .soleil{
     position: relative;
-    right: 30%;
+    right: 40%;
+    bottom: 20%;
     height: 350px;
     width: 350px;
 }
 
+.soleil2{
+    position: absolute;
+    bottom: 16%;
+    left: 22%;
+    font-size: 100%;
+    color: gold;
+}
+
 .terre{
     position: relative;
-    left: 70%;
+    left: 150%;
+    top: 10%;
+}
+
+.terre2{
+    position: absolute;
+    bottom: 13%;
+    left: 165%;
+    font-size: 100%;
+    color: gold;
 }
 
 .mercure{
     position: relative;
-    right: 60%;
+    right: 180%;
     bottom: 120%;
+}
+
+.mercure2{
+    position: absolute;
+    bottom: 90%;
+    right: 190%;
+    font-size: 100%;
+    color: gold;
 }
 
 .mars{
     position: relative;
-    right: 70%;
+    right: 120%;
+    bottom : 50%;
+}
+
+.mars2{
+    position: absolute;
+    bottom: 18%;
+    right: 135%;
+    font-size: 100%;
+    color: gold;
 }
 
 .sanguine{
     position: relative;
     left: 20%;
-    bottom: 10%;
+    bottom: 40%;
+}
+
+.sanguine2{
+    position: absolute;
+    bottom: 20%;
+    left: 44%;
+    font-size: 100%;
+    color: gold;
 }
 
 /* Smartphone (col-xs)*/

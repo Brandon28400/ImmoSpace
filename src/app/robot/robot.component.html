@@ -1,43 +1,38 @@
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<h2>Real estate agent choice</h2>
+<h3>Here, you can choose the real estate agent who will accompany you in your purchase.</h3>
+<br>
+<div class="row">
 
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
+        <img src="assets/robot_1.png" alt="photo" class="col-12" />
+        <br>
+        <p class="presrobot">Specialist of cold and distant planets, I am a very good negotiator and I can you get
+            options at very good prices.</p><br><br/>
+        <p class="name_robot col-12">Bender</p>
+    </a>
 
-<h2>Choix de l'agent immobilier</h2>
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
+        <img src="assets/robot_2.png" alt="photo" class="col-12" />
+        <br>
+        <p class="presrobot">I am specialized in long term rentals or with an option to buy. I can also accompany
+            you for life-time purchases</p><br><br/>
+        <p class="name_robot col-12">Oscar</p>
+    </a>
 
-<p>Ici, tu peux choisir l'agent immobilier qui t'accompagnera dans ton achat.</p>
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
+        <img src="assets/robot_3.png" alt="photo" class="col-12" />
+        <br>
+        <p class="presrobot">I am the specialist of inhabited planets. I also work on planets near the sun where
+            temperatures are unsustainable.</p><br>  <br/> 
+        <p class="name_robot col-12">Robotus</p>
+    </a>
 
-<div class="margin">
-    <div class="row">
-        <div class="col-6">
-            <div class="img_robot1">
-                <img src="assets/C3-PO.png" alt="photo">
-            </div>
-                <div class="name_robot1">C3-PO</div>
-        </div>
-        <div class="col-6">
-            <div class="img_robot2">
-                <a [routerLink]="['/Spacemap']">
-                <img src="assets/robot1.png" alt="photo">
-                </a>
-            </div>
-                <div class="name_robot2">Mr.Bidule</div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <div class="img_robot3">
-                <img src="assets/Terminator.png" alt="photo">
-            </div>
-                <div class="name_robot3">Terminator</div>
-        </div>
-        <div class="col-6">
-            <div class="img_robot4">
-                <img src="assets/Walle.png" alt="photo">
-            </div>
-                <div class="name_robot4">Wall-E</div>
-            </div>
-        </div>
+    <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
+        <img src="assets/robot_4.png" alt="photo" class="col-12" />
+        <br>
+        <p class="presrobot">I am an ecological in the soul, I know well the planets having a significant
+            pollution and can negotiate for you a good price before depolluting.</p><br>
+        <p class="name_robot col-12">Tod</p>
+    </a>
+
 </div>
-
-<a [routerLink]="['/Home']"><button type="submit" class="btn btn-dark btn-lg">Retour</button></a>

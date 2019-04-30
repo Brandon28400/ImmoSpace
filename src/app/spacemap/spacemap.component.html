@@ -1,38 +1,48 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 <h2>The SpaceMap</h2>
+<h3>Click on the planet of your choice to get more information about it.</h3>
 
 <div class="margin">
   <div class="container">
     <div class="row">
-      <div class="col-4"><img class="img_planete saturne" src="assets/saturne.png"/></div>
-      <div class="col-4"><img class="img_planete uranus" src="assets/uranus.png"/></div>
-      <div class="col-4"><a [routerLink]="['/Planete/venus']" class="nav-link"><img class="img_planete venus" src="assets/venus.png"/></a></div>
+      <div class="col-4">
+        <img class="img_planete saturne" src="assets/saturne.png"/>
+        <p class="saturne2">1500 credits</p>
+      </div>
+      <div class="col-4">
+        <img class="img_planete uranus" src="assets/uranus.png"/>
+        <p class="uranus2">600 credits</p>
+      </div>
+      <div class="col-4">
+        <a [routerLink]="['/Planete/venus']"><img class="img_planete venus" src="assets/venus.png"/></a>
+        <p class="venus2">700 credits</p>
+      </div>
     </div>
     <div class="row">
-      <div class="col-4"><a [routerLink]="['/Planete/moon']" class="nav-link"><img class="img_planete lune" src="assets/lune.png"/></a></div>
-      <div class="col-4"><a [routerLink]="['/Planete/sun']" class="nav-link"><img class="img_planete soleil" src="assets/soleil.png" /></a></div>
-      <div class="col-4"><a [routerLink]="['/Planete/earth']" class="nav-link"><img class="img_planete terre" src="assets/terre.png" (click)="getPlanets(POTS)"/></a></div>
+      <div class="col-4">
+        <a [routerLink]="['/Planete/moon']"><img class="img_planete lune" src="assets/lune.png"/></a>
+        <p class="lune2">500 credits</p>
+      </div>
+      <div class="col-4">
+        <a [routerLink]="['/Planete/sun']"><img class="img_planete soleil" src="assets/soleil.png" /></a>
+        <p class="soleil2">2000 credits</p>
+      </div>
+      <div class="col-4">
+        <a [routerLink]="['/Planete/earth']"><img class="img_planete terre" src="assets/terre.png"/></a>
+        <p class="terre2">1900 credits</p>
+      </div>
     </div>
     <div class="row">
-      <div class="col-4"><a [routerLink]="['/Planete/mercure']" class="nav-link"><img class="img_planete mercure" src="assets/mercure.png"/></a></div>
-      <div class="col-4"><a [routerLink]="['/Planete/mars']" class="nav-link"><img class="img_planete mars" src="assets/mars.png"/></a></div>
-      <div class="col-4"><img class="img_planete sanguine" src="assets/sanguine.png"/></div>
+      <div class="col-4">
+        <a [routerLink]="['/Planete/mercure']"><img class="img_planete mercure" src="assets/mercure.png"/></a>
+        <p class="mercure2">950 credits</p>
+      </div>
+      <div class="col-4">
+        <a [routerLink]="['/Planete/mars']"><img class="img_planete mars" src="assets/mars.png"/></a>
+        <p class="mars2">1300 credits</p>
+      </div>
+      <div class="col-4">
+        <img class="img_planete sanguine" src="assets/sanguine.png"/>
+        <p class="sanguine2">??? credits</p>
+      </div>
     </div>
   </div>
- 
-    <br/>
-    <br/>
-  <div class="row">
-    <div class="col-6">
-      <p>Here are all the planets that I selected you by your criteria. 
-        You can click on each of the entries they to have more details!</p>
-        <button type="submit" class="btn btn-dark btn-lg"><a [routerLink]="['/Home']">how me something else</a></button>
-    </div>
-    <div class="col-6">
-      <img class="robot" src="assets/robot1.png" alt="robot"/>
-    </div>
-  </div>
-</div>

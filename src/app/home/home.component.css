@@ -1,5 +1,4 @@
-h1,h3{
-	color: white;
+h1, h2{
 	margin-top: 2%;
 }
 
@@ -8,12 +7,13 @@ h1,h3{
 	height: 50px;
 }
 
-a{
-	color: white;
+.btn{
+	height: 100px;
+	background-color: rebeccapurple;
+	border: 2px solid black;
 }
 
-a:hover{
-	color: white;
+.planete{
+	height: 500px;
+	width: 500px;
 }
-
-

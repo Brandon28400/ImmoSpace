@@ -1,12 +1,10 @@
-
-
 #info {
 	position: absolute;
 	top: 15%;
 	width: 100%;
 	text-align: center;
     display:block;
-    color: aliceblue;
+    color: white;
 }
 
 
@@ -18,9 +16,15 @@
     border-top: 1px solid white;
     text-align: end
 }
+
 li{
     color: white;
 }
+
 ul{
     list-style: none;
+}
+
+p{
+    font-size: 120%;
 }

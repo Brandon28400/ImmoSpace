@@ -1,42 +1,21 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 <h2>The SpaceMap</h2>
+<h3>Click on the planet of your choice to get more information about it.</h3>
 
 <div class="margin">
   <div class="container">
     <div class="row">
       <div class="col-4"><img class="img_planete saturne" src="assets/saturne.png"/></div>
       <div class="col-4"><img class="img_planete uranus" src="assets/uranus.png"/></div>
-      <div class="col-4"><img class="img_planete venus" src="assets/venus.png"/></div>
+      <div class="col-4"><a [routerLink]="['/Planete/venus']"><img class="img_planete venus" src="assets/venus.png"/></a></div>
     </div>
     <div class="row">
-      <div class="col-4"><img class="img_planete lune" src="assets/lune.png"/></div>
-      <div class="col-4"><img class="img_planete soleil" src="assets/soleil.png"/></div>
-      <div class="col-4">
-        <a [routerLink]="['/Planete']" class="nav-link">
-        <img class="img_planete terre" src="assets/terre.png"/>
-        </a>
-      </div>
+      <div class="col-4"><a [routerLink]="['/Planete/moon']"><img class="img_planete lune" src="assets/lune.png"/></a></div>
+      <div class="col-4"><a [routerLink]="['/Planete/sun']"><img class="img_planete soleil" src="assets/soleil.png" /></a></div>
+      <div class="col-4"><a [routerLink]="['/Planete/earth']"><img class="img_planete terre" src="assets/terre.png"/></a></div>
     </div>
     <div class="row">
-      <div class="col-4"><img class="img_planete mercure" src="assets/mercure.png"/></div>
-      <div class="col-4"><img class="img_planete mars" src="assets/mars.png"/></div>
+      <div class="col-4"><a [routerLink]="['/Planete/mercure']"><img class="img_planete mercure" src="assets/mercure.png"/></a></div>
+      <div class="col-4"><a [routerLink]="['/Planete/mars']"><img class="img_planete mars" src="assets/mars.png"/></a></div>
       <div class="col-4"><img class="img_planete sanguine" src="assets/sanguine.png"/></div>
     </div>
   </div>
- 
-    <br/>
-    <br/>
-  <div class="row">
-    <div class="col-6">
-      <p>Here are all the planets that I selected you by your criteria. 
-        You can click on each of the entries they to have more details!</p>
-        <button type="submit" class="btn btn-dark btn-lg"><a [routerLink]="['/Home']">how me something else</a></button>
-    </div>
-    <div class="col-6">
-      <img class="robot" src="assets/robot1.png" alt="robot"/>
-    </div>
-  </div>
-</div>

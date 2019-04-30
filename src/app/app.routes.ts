@@ -11,9 +11,9 @@ const ROUTES: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Robot', component: RobotComponent },
   { path: 'Spacemap', component: SpacemapComponent },
-  { path: 'Planete', component: PlaneteComponent },
-  { path: 'FormAchat', component: FormachatComponent },
-  { path: 'FormLocation', component: FormlocationComponent },
+  { path: 'Planete/:planetname', component: PlaneteComponent },
+  { path: 'Formachat', component: FormachatComponent },
+  { path: 'Formlocation', component: FormlocationComponent },
 ];
 
 export { ROUTES };

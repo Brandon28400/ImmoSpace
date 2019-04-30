@@ -1,3 +1,4 @@
+
 a{
     flex-shrink: 0;
     flex-grow: 0;
@@ -14,14 +15,11 @@ a{
 }
 
 h2{
-    color: white;
     margin-top: 2%;
 }
 
 h3{
-    color: white;
     margin-top: 2%;
-    font-size: 160%;
 }
 
 a{
@@ -54,3 +52,6 @@ a{
     height: 65%;   
 }
 
+.robot1{
+    margin-top: 11%;
+}

@@ -1,9 +1,6 @@
 p{
-    border: 2px solid black;
-    font-size: 140%;
     color: white;
-    padding: 2%;
-    margin-top: 10%;
+    font-size: 130%;
 }
 
 h2{
@@ -27,7 +24,7 @@ a:hover{
 
 .saturne{
     position: relative;
-    right: 140%;
+    right: 200%;
     bottom: 20%;
     height: 300px;
     width: 300px;
@@ -35,49 +32,53 @@ a:hover{
 
 .uranus{
     position: relative;
+    left: 50%;
     top: 20%;
 }
 
 .venus{
     position: relative;
-    left: 60%;
-
+    left: 150%;
 }
 
 .lune{
     position: relative;
-    bottom: 25%;
+    right: 30%;
+    bottom: 40%;
     height: 150px;
     width: 150px;
 }
 
 .soleil{
     position: relative;
-    right: 30%;
+    right: 40%;
+    bottom: 20%;
     height: 350px;
     width: 350px;
 }
 
 .terre{
     position: relative;
-    left: 70%;
+    left: 150%;
+    top: 10%;
 }
 
 .mercure{
     position: relative;
-    right: 60%;
+    right: 180%;
     bottom: 120%;
 }
 
 .mars{
     position: relative;
-    right: 70%;
+    right: 120%;
+    bottom : 50%;
 }
 
 .sanguine{
     position: relative;
     left: 20%;
-    bottom: 10%;
+    bottom: 40%;
 }
 
 /* Smartphone (col-xs)*/

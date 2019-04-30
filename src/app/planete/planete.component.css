@@ -1,30 +1,22 @@
-#info {
-	position: absolute;
-	top: 15%;
-	width: 100%;
-	text-align: center;
-    display:block;
-    color: white;
-}
-
-
-.description{
-    color:aliceblue;
-    position: absolute;
-    right: 10%;
-    top:40%;
-    border-top: 1px solid white;
-    text-align: end
-}
-
 li{
     color: white;
+    margin-bottom: 1%;
 }
 
 ul{
     list-style: none;
 }
 
-p{
-    font-size: 120%;
+#renderCanvas{
+    margin-top: -8%;
+}
+
+.informations{
+    margin-top: -30%;
+    margin-left: 48%;
+}
+
+.gif{
+    margin-top: -60%;
+    margin-left: 48%;
 }

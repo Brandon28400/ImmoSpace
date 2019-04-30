@@ -14,7 +14,7 @@ body{
     src: url('assets/CasanovaScotia.otf');
 }
 
-p{
+p, li{
     font-family: "Space2";
 }
 

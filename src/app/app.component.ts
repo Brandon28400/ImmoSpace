@@ -13,22 +13,8 @@ export class AppComponent {
   planeteRandom: any[];
   
 
-  constructor(private myService: NasaService) {
-    this.planeteRandom=[];
+  constructor() {
 
-    this.data = [];
-    this.myService.getPlanets().subscribe(
-      (param_data: string[]) => {
-        this.data = param_data;
-        this.planeteRandom.push(this.data[Math.floor((Math.random()*this.data.length))]);
-        
-        console.log(this.planeteRandom);
-        
-
-      }
-      
-    )
-    
   }
 
 

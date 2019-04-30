@@ -17,6 +17,14 @@
     text-align: end
 }
 
+li{
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
 p{
     font-size: 120%;
 }

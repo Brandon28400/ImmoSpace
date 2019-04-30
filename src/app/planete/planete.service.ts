@@ -59,7 +59,7 @@ export class PlaneteService {
 
 
   }
-  createEarth(elementId:string, texture:string){
+  createEarth(elementId:string, texture:string, title:string){
     this.canvas = <HTMLCanvasElement>document.getElementById(elementId);
 
     this.renderer = new THREE.WebGLRenderer({

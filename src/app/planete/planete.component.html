@@ -1,16 +1,20 @@
 <div class=" d-flex flex-column  align-items-center maps-wrapper">
   <div id="info">
-    <h3>THE EARTH</h3>
+
+    <h1>{{title}}</h1>
   </div>
   <canvas id="renderCanvas"></canvas>
 
-  <div *ngFor="let current of planeteRandom">
-    <ul>
-      <li>{{current.pl_name}}</li>
-      <li>{{current.pl_bmassj}}</li>
-      <li *ngIf="current.pl_orbper">{{current.pl_orbper}}</li>
-      <li *ngIf="!current.pl_orbper">va te faire voir</li>
-    </ul>
-  </div>
-  <button type="button" (click)="nextPlanete()">NEXT</button>
+  <div class="informations" *ngFor="let current of data">
+      <ul>
+        <li>Référence d'achat: {{current.pl_name}}</li>
+        <li>Planet's mass: {{current.pl_bmassj}} billions tons</li>
+        <li *ngIf="current.pl_orbper">Planet's orbper: {{current.pl_orbper}} degrees</li>
+        <li *ngIf="!current.pl_orbper">No information</li>
+      
+      </ul>
+      
+    </div>
+    <div *ngIf="data.length==0"><img src="assets/loading.gif" alt="loading gif" /></div>
+
 </div>

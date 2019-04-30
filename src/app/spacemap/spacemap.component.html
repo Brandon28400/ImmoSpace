@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-4"><a [routerLink]="['/Planete/moon']" class="nav-link"><img class="img_planete lune" src="assets/lune.png"/></a></div>
       <div class="col-4"><a [routerLink]="['/Planete/sun']" class="nav-link"><img class="img_planete soleil" src="assets/soleil.png" /></a></div>
-      <div class="col-4"><a [routerLink]="['/Planete/earth']" class="nav-link"><img class="img_planete terre" src="assets/terre.png"/></a></div>
+      <div class="col-4"><a [routerLink]="['/Planete/earth']" class="nav-link"><img class="img_planete terre" src="assets/terre.png" (click)="getPlanets(POTS)"/></a></div>
     </div>
     <div class="row">
       <div class="col-4"><a [routerLink]="['/Planete/mercure']" class="nav-link"><img class="img_planete mercure" src="assets/mercure.png"/></a></div>

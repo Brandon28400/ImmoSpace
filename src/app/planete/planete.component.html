@@ -1,45 +1,20 @@
 <div class=" d-flex flex-column  align-items-center maps-wrapper">
   <div id="info">
-    <p>THE EARTH</p>
+    <h1>{{title}}</h1>
   </div>
   <canvas id="renderCanvas"></canvas>
 
-  <div *ngFor="let current of planeteRandom">
+  <div class="informations" *ngFor="let current of data">
       <ul>
-        <li>{{current.pl_name}}</li>
-        <li>{{current.pl_bmassj}}</li>
-        <li *ngIf="current.pl_orbper">{{current.pl_orbper}}</li>
-        <li *ngIf="!current.pl_orbper">va te faire voir</li>
+        <li>Référence d'achat: {{current.pl_name}}</li>
+        <li>Planet's mass: {{current.pl_bmassj}} billions tons</li>
+        <li *ngIf="current.pl_orbper">Planet's orbper: {{current.pl_orbper}} degrees</li>
+        <li *ngIf="!current.pl_orbper">No information</li>
       
       </ul>
-    
+      
     </div>
-    <button type="button" (click)="nextPlanete()">NEXT</button>
+    <div *ngIf="data.length==0"><img src="assets/loading.gif" alt="loading gif" /></div>
 
-</div>
-
-
-<div class="margin">
-  <br />
-  <br />
-  <div class="row">
-    <div class="col-6">
-      <img class="robot" src="assets/robot1.png" alt="robot" />
-    </div>
-    <div class="col-6">
-      <p>
-        Nom : Planète Terre <br/>
-        Age : 4,54 millards d'années <br/>
-        Superficie : 510,1 M km² <br/>
-        Population : Humains / Animaux / Végétaux <br/>
-        Continents : 7 <br/>
-        Océans : 5 <br/>
-        Polution : Critique
-      </p>
-      <a [routerLink]="['/Spacemap']"><button type="submit" class="btn btn-dark btn-lg">Montre moi autre chose</button></a>
-      <br/>
-      <button class="valid" type="submit" class="btn btn-dark btn-lg">J'achète !</button>
-    </div>
-  </div>
 </div>
 

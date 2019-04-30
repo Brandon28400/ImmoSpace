@@ -6,15 +6,21 @@ body{
 
 @font-face{
     font-family: "Space";
-    src: url('assets/FREEDOM.ttf');
+    src: url('assets/paladins.ttf');
 }
 
-*{
-    font-family: "Space";
+@font-face{
+    font-family: "Space2";
+    src: url('assets/CasanovaScotia.otf');
+}
+
+p{
+    font-family: "Space2";
 }
 
 h1, h2, h3{
-	color: white;
+    color: white;
+    font-family: "Space";
 }
 
 h1{

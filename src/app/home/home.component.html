@@ -21,13 +21,19 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <a [routerLink]="['/Planete/earth']">
       <img class="planete" src="assets/terre.png" alt="First slide">
+      </a>
     </div>
     <div class="carousel-item">
+      <a [routerLink]="['/Planete/venus']">
       <img class="planete" src="assets/venus.png" alt="Second slide">
+      </a>
     </div>
     <div class="carousel-item">
+      <a [routerLink]="['/Planete/mercure']">
       <img class="planete" src="assets/mercure.png" alt="Third slide">
+      </a>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -10,19 +10,19 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./spacemap.component.css']
 })
 export class SpacemapComponent implements OnInit {
-  public tableau:string[]
+  public tableau: string[]
   constructor(private planServ: PlaneteService, private theServ: NasaService, private _activated: ActivatedRoute) {
     this.theServ.getPlanets().subscribe(
-      (param:string[])=>{
-        this.tableau=param;
+      (param: string[]) => {
+        this.tableau = param;
         console.log(this.tableau)
       }
     )
-   }
+  }
 
-  ngOnInit() {}
-  
+  ngOnInit() { }
 
-  
+
+
 
 }

@@ -1,14 +1,18 @@
-<br/>
+<br />
 <h2>{{title}}</h2>
 
-  <canvas id="renderCanvas"></canvas>
+<canvas id="renderCanvas"></canvas>
 
-  <div class="informations" *ngFor="let current of data">
-      <ul>
-        <li><u>Reference d'achat:</u> {{current.pl_name}}</li>
-        <li><u>Planet's mass:</u> {{current.pl_bmassj}} billions tons</li>
-        <li *ngIf="current.pl_orbper"><u>Planet's orbper:</u> {{current.pl_orbper}} degrees</li>
-        <li *ngIf="!current.pl_orbper">No information</li>
-      </ul>
+<div class="informations" *ngFor="let current of data">
+  <ul>
+    <li><u>Reference d'achat:</u> {{current.pl_name}}</li>
+    <li><u>Planet's mass:</u> {{current.pl_bmassj}} billions tons</li>
+    <li *ngIf="current.pl_orbper"><u>Planet's orbper:</u> {{current.pl_orbper}} degrees</li>
+    <li *ngIf="!current.pl_orbper">No information</li>
+  </ul>
+  <div *ngFor="let rob of newrobotList">
+    <img src="{{rob.photo}}" class=" therob img-fluid"/>
+    <p>{{rob.name}}</p>
   </div>
-    <div *ngIf="data.length==0"><img src="assets/loading.gif" alt="loading gif" class="gif"/></div>
+</div>
+<div *ngIf="data.length==0"><img src="assets/loading.gif" alt="loading gif" class="gif" /></div>

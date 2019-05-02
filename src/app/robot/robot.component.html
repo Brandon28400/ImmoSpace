@@ -4,35 +4,39 @@
 <div class="row">
 
     <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
-        <img src="assets/robot_1.png" alt="photo" class="col-12" />
+        <img src="{{robotList[0].photo}}" alt="photo" class="col-12" />
         <br>
         <p class="presrobot">Specialist of cold and distant planets, I am a very good negotiator and I can you get
             options at very good prices.</p><br><br/>
-        <p class="name_robot col-12">Bender</p>
+        <p class="name_robot col-12">{{robotList[0].name}}</p>
+        <button type="submit" (click)="chooseRobot(robotList[0].name, robotList[0].photo)">Choose</button>
     </a>
 
     <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
-        <img src="assets/robot_2.png" alt="photo" class="col-12" />
+        <img src="{{robotList[1].photo}}" alt="photo" class="col-12" />
         <br>
         <p class="presrobot">I am specialized in long term rentals or with an option to buy. I can also accompany
             you for life-time purchases</p><br><br/>
-        <p class="name_robot col-12">Oscar</p>
+        <p class="name_robot col-12">{{robotList[1].name}}</p>
+        <button type="submit" (click)="chooseRobot(robotList[1].name, robotList[1].photo)">Choose</button>
     </a>
 
     <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
-        <img src="assets/robot_3.png" alt="photo" class="col-12" />
+        <img src="{{robotList[2].photo}}" alt="photo" class="col-12" />
         <br>
         <p class="presrobot">I am the specialist of inhabited planets. I also work on planets near the sun where
             temperatures are unsustainable.</p><br>  <br/> 
-        <p class="name_robot col-12">Robotus</p>
+        <p class="name_robot col-12">{{robotList[2].name}}</p>
+        <button type="submit" (click)="chooseRobot(robotList[2].name, robotList[2].photo)">Choose</button>
     </a>
 
     <a [routerLink]="['/Spacemap']" class="col-12 col-lg-3 robotap">
-        <img src="assets/robot_4.png" alt="photo" class="col-12" />
+        <img src="{{robotList[3].photo}}" alt="photo" class="col-12" />
         <br>
         <p class="presrobot">I am an ecological in the soul, I know well the planets having a significant
             pollution and can negotiate for you a good price before depolluting.</p><br>
-        <p class="name_robot col-12">Tod</p>
+        <p class="name_robot col-12">{{robotList[3].name}}</p>
+        <button type="submit" (click)="chooseRobot(robotList[3].name, robotList[3].photo)">Choose</button>
     </a>
 
 </div>

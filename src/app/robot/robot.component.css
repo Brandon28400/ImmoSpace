@@ -33,3 +33,10 @@ img{
     width: 100%;
     height: 65%;  
 }
+
+button{
+    color: white;
+    border: 2px solid black;
+    background-color: blueviolet;
+    width:45%;
+}

@@ -1,4 +1,4 @@
-import * as THREE from '/home/rabour/Documents/WildCodeSchool/Projet/ImmoSpace/node_modules/three/src/Three'
+import * as THREE from 'three'
 import { Injectable } from '@angular/core';
 import { Scene, Material } from 'three';
 
